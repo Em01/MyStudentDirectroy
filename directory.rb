@@ -1,25 +1,25 @@
 #lets put all students into an array
 students = [
- "Steve Musgrave",
- "Sroop Sunar",
- "Colin Marshall",
- "Josh Fail-Brown",
- "Louise Lai",
- "Robin Doble",
- "Alex Wong",
- "Scott Dimmock",
- "Muhanad Al-Rubaiee",
- "Shelley Hope",
- "Will Hall",
- "Oliver Delevingne",
- "Nico Saueressig",
- "Apostolis",
- "Stefania",
- "Robert Leon",
- "Emma Williams",
- "Joey Wolf",
- "Julie Walker",
- "Daniel Le Dosquet",
+ {:name => "Steve Musgrave", :cohort => :March},
+ {:name => "Sroop Sunar", :cohort => :March},
+ {:name => "Colin Marshall", :cohort => :March},
+ {:name =>"Josh Fail-Brown", :cohort => :March},
+ {:name => "Louise Lai", :cohort => :March},
+ {:name => "Robin Doble", :cohort => :March},
+ {:name => "Alex Wong", :cohort => :March},
+ {:name => "Scott Dimmock", :cohort => :March},
+ {:name => "Muhanad Al-Rubaiee", :cohort => :March},
+ {:name => "Shelley Hope", :cohort => :March},
+ {:name => "Will Hall", :cohort => :March},
+ {:name => "Oliver Delevingne", :cohort => :March},
+ {:name => "Nico Saueressig", :cohort => :March},
+ {:name => "Apostolis", :cohort => :March},
+ {:name => "Stefania", :cohort => :March},
+ {:name => "Robert Leon", :cohort => :March},
+ {:name => "Emma Williams", :cohort => :March},
+ {:name => "Joey Wolf", :cohort => :March},
+ {:name => "Julie Walker", :cohort => :March},
+ {:name => "Daniel Le Dosquet", :cohort => :March}
 
 ]
 
@@ -29,11 +29,10 @@ puts "The students of my cohort at Makers Academy"
 puts "--------------"
 end
 
-
-def print(names)
-	names.each do |name|
-		puts name 
-	end 
+def print(students)
+ students.each do |student|
+	puts "#{student[:name]} (#{student[:cohort]} cohort)"
+ end
 end
 
 def print_footer(names)
