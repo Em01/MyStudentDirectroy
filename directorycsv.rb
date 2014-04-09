@@ -3,15 +3,11 @@ def print(x)
 end
 
 def print_header
-print "The students of my cohort at Makers Academy"
+print "The students of my cohort at Makers Academy whose name starts with a!\n"
 print "--------------"
 end
 
-def display_students(students)
- students.each do |student|
-	print "#{student[:name]} (#{student[:cohort]} cohort)"
- end
-end
+
 
 def print_footer(names)
 	print "Overall, we have #{names.length} great students. Although actually here are all our students details!"
@@ -42,14 +38,26 @@ while !name.empty? do
 	print "Now we have #{students.length} students"
 	# get another name from the user
 	name = gets.chomp
+
  end
 # return the array of students
 students
 end
 
-# nothing happens until we call the methods
+def display_students(students)
+ students.each_with_index do |student, index|
+ 	# print students.each_with_index do 
+ if student[:name].start_with?("A")
+ 	#this statement will print only the students whose names start with A
+	print "#{index + 1} #{student[:name]} #{student[:cohort]}"
+ end
+end
+end
+#nothing happens until we call the methods
 students = input_students
 print_header
 display_students(students)
 print_footer(students)
+
+
 		
