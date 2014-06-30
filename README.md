@@ -7,8 +7,8 @@ This project was given to us during the first week at Makers Academy. The idea w
 - Ruby
 
 ##Pairing
-For this project i paired with
-Lousie Lai & Joseph Wolf 
+- Lousie Lai 
+- Joseph Wolf 
 
 
 
